@@ -1,3 +1,5 @@
+"use strict ";
+
 // ? destructing arrays  //
 
 // const restaurant = {
@@ -124,31 +126,31 @@
 /* -------------------------------------------------------------------------- */
 /*                               spreadoperator;                              */
 /* -------------------------------------------------------------------------- */
-const restaurant = {
-  name: "kitchenMala",
-  location: "random ghat",
-  categories: ["italian ", "chinese", "japanease"],
-  starterMenu: ["pasta", "soup"],
-  mainMenu: ["rice", "chicken"],
-  openingHours: {
-    thu: {
-      open: 12,
-      close: 23,
-    },
-    fri: {
-      open: 23,
-      close: 24,
-    },
-  },
-  order: function (starterIndex, mainIndex) {
-    return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
-  },
-  orderPasta: function (ing1, ing2, ing3) {
-    console.log(
-      `here is  your pasta with ingredient : ${ing1} ,${ing2},${ing3}`
-    );
-  },
-};
+// const restaurant = {
+//   name: "kitchenMala",
+//   location: "random ghat",
+//   categories: ["italian ", "chinese", "japanease"],
+//   starterMenu: ["pasta", "soup"],
+//   mainMenu: ["rice", "chicken"],
+//   openingHours: {
+//     thu: {
+//       open: 12,
+//       close: 23,
+//     },
+//     fri: {
+//       open: 23,
+//       close: 24,
+//     },
+//   },
+//   order: function (starterIndex, mainIndex) {
+//     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
+//   },
+//   orderPasta: function (ing1, ing2, ing3) {
+//     console.log(
+//       `here is  your pasta with ingredient : ${ing1} ,${ing2},${ing3}`
+//     );
+//   },
+// };
 
 /* ------------------------ here is the  real example ----------------------- */
 // const ingredients = [
@@ -185,3 +187,17 @@ const restaurant = {
 // restaurantCopy.name = "my megakitchen";
 // console.log(restaurantCopy.name);
 // console.log(restaurant.name);
+
+/* ------------------------------- strict mode ------------------------------ */
+/* --------------- allow to write more secure javascript code --------------- */
+// forbids  us  to do certain things
+// in create visible error in console
+// reserved word
+// variable with missing character
+
+// let hasDriverLicense = false;
+// const passTest = true;
+// if (passTest) hasDriverLicense = true;
+// if (hasDriverLicense) console.log("allow me  to drive");
+
+// const interfaece = true;
