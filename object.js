@@ -28,3 +28,41 @@
 // const nameKey = "Name";
 // console.log(info["first" + nameKey]);
 // console.log(info["last" + nameKey]);
+
+/* -------------------------------------------------------------------------- */
+/*                    primitive vs object vs referance type                   */
+/* -------------------------------------------------------------------------- */
+let age = 23;
+const oldAge = age;
+age = 50;
+// console.log("age", age);
+// console.log("oldAge", oldAge);
+
+// referane type
+/* --------- primitive => primitive type objects => referance  type --------- */
+const me = {
+  name: "random",
+  age: 23,
+};
+
+const friend = me;
+friend.age = 34;
+console.log("friend", friend);
+console.log("me", me);
+
+const rani = {
+  firstName: "rani",
+  lastName: "mohan",
+  age: 23,
+  family: ["raji", "joti"],
+};
+
+// assign  work=> shallow copy => copy only first level
+// deep copy => copy up to any level
+// aasign => create a new object
+//  ? to achive  deep copy we have to use external library =>  one of them  is lodash
+const raniCopy = Object.assign({}, rani);
+raniCopy.lastName = "agarwal";
+raniCopy.family.push("mohan");
+console.log("before marriage ", rani);
+console.log("after marriage", raniCopy);
